@@ -27,8 +27,8 @@
 #   VPC    
 #   CloudFormation
   eksctl create cluster --name surya \
-      --region ap-south-1 \
-   --node-type t2.small \
+      --region ap-south-2\
+   --node-type t3.micro \
 
 aws eks update-kubeconfig --region ap-south-2 --name surya
 
